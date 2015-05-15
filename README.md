@@ -10,6 +10,7 @@ git clone https://github.com/pauljb/logstash-filter-sequence.git
 2. Build
 
 cd /opt/logstash-filter-sequence
+
 gem build logstash-filter-sequence.gemspec
 
 3. Install  (if logstash installed in /opt/logstash)
