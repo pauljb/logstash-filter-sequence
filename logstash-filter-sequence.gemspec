@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
-  s.name = 'logstash-filter-example'
-  s.version         = '0.1.4'
+  s.name = 'logstash-filter-sequence'
+  s.version         = '0.1.1'
   s.licenses = ['Apache License (2.0)']
-  s.summary = "This example filter replaces the contents of the message field with the specified value."
+  s.summary = "This filter adds a sequence number for events that have the same timestamp.  you may then sort on it."
   s.description = "This gem is a logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/plugin install gemname. This gem is not a stand-alone program"
   s.authors = ["Elastic"]
   s.email = 'info@elastic.co'
@@ -18,6 +18,5 @@ Gem::Specification.new do |s|
   s.metadata = { "logstash_plugin" => "true", "logstash_group" => "filter" }
 
   # Gem dependencies
-  s.add_runtime_dependency "logstash-core", '>= 1.4.0', '< 2.0.0'
-  s.add_development_dependency 'logstash-devutils'
+  s.add_runtime_dependency "logstash-core", '>= 1.5.0', '< 2.0.0'
 end
